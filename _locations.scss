@@ -1,0 +1,108 @@
+.world-map {
+  .container {
+    padding: 0 3.2rem;
+    @media #{$mq-small} { padding: 0 4rem; }
+    @media (min-width: 1200px) { padding: 0; }
+  }
+  .map-container {
+    pointer-events: none;
+    max-width: 42rem;
+    margin: 0 auto;
+    @media #{$mq-small} {
+      max-width: 100rem;
+      position: relative;
+    }
+    @media (min-width: 1100px) {
+      max-width: var(--space-max-width);
+    }
+    .map-picture {
+      width: 100%;
+      display: flex;
+      &--tablet,
+      &--desktop {
+        display: none;
+      }
+      @media #{$mq-small} {
+        &--mobile { display: none; }
+        &--tablet { display: block; }
+      }
+      @media (min-width: 1100px) {
+        &--tablet { display: none; }
+        &--desktop { display: block; }
+      }
+    }
+  }
+
+  .locations-list {
+    max-width: 32rem;
+    margin: 4rem auto 0;
+    @media #{$mq-small} {
+      display: none;
+    }
+    .location {
+      background-color: rgba(252, 183, 43, 0.15);
+      text-align: center;
+      padding: 2.2rem 0;
+      &:not(:last-of-type) {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}
+
+.message-us {
+  margin: 7.2rem 0;
+  text-align: center;
+  @media #{$mq-small} {
+    margin-top: 6.4rem;
+    margin-bottom: var(--space-s);
+  }
+  @media (min-width: 1100px) {
+    text-align: left;
+    margin-top: var(--space-s);
+  }
+
+  .container {
+    padding: 0 3.21rem;
+    @media (min-width: 1100px) {
+      display: flex;
+      align-items: center;
+      
+      max-width: var(--space-max-width);
+      margin: 0 auto;
+    }
+    @media (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+  &__heading {
+    
+    @media (max-width: 1109px) {
+      max-width: 45.7rem;
+      margin: 0 auto;
+      text-transform: capitalize;
+    }
+    @media (min-width: 1100px) {
+      max-width: 35rem;
+      margin-right: 3rem;
+    }
+  }
+  &__body {
+    margin: 3.2rem auto;
+    max-width: 57.3rem;
+    @media #{$mq-small} {
+      margin: 4rem auto;
+    }
+    @media (min-width: 1100px) {
+      margin: 0; max-width: 44.5rem;
+    }
+  }
+
+  .btn--message-us {
+    margin: 0 auto;
+    @media (min-width: 1100px) {
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dras_22",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp"
+  ],
+  "author": "Otabek",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
